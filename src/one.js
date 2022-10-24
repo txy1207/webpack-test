@@ -1,5 +1,6 @@
-import Two from './two.js';
-const test=num=>{
-    console.log(num);
+function testable(target){
+    target.isTestable=true;
 }
-test(Two.y);
+@testable
+class MyTestableClass{}
+console.log("装饰器语法：",MyTestableClass.isTestable);
