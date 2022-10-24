@@ -90,24 +90,22 @@
 /*!********************!*\
   !*** ./src/one.js ***!
   \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _two_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./two.js */ \"./src/two.js\");\n\nvar test = function test(num) {\n  console.log(num);\n};\ntest(_two_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].y);\n\n//# sourceURL=webpack:///./src/one.js?");
-
-/***/ }),
-
-/***/ "./src/two.js":
-/*!********************!*\
-  !*** ./src/two.js ***!
-  \********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  y: 100\n});\n\n//# sourceURL=webpack:///./src/two.js?");
+var _class;
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function testable(target) {
+  target.isTestable = true;
+}
+var MyTestableClass = testable(_class = /*#__PURE__*/_createClass(function MyTestableClass() {
+  _classCallCheck(this, MyTestableClass);
+})) || _class;
+console.log("装饰器语法：", MyTestableClass.isTestable);
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=one.main.js.map
